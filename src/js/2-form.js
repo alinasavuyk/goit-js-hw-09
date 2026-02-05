@@ -9,8 +9,8 @@ const textareaMessage =form.elements.message;
 const rawData = localStorage.getItem(localStorageKey);
 if (rawData) {
   const data = JSON.parse(rawData);
-  textareaEmail.value.trim()=data.email || "";
-  textareaMessage.value.trim()=data.message || "";
+  textareaEmail.value=data.email || "";
+  textareaMessage.value=data.message || "";
   formData=data;
 }
 
