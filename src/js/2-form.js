@@ -32,5 +32,8 @@ alert(`Fill please all fields`)
     	console.log(formData);
  localStorage.removeItem(localStorageKey);
  form.reset();
+ formData = { 
+    email: "", 
+    message: "" };
   }
 }
